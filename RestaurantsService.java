@@ -1,5 +1,4 @@
 package com.restaurants.types.restaurants;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
