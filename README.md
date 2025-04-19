@@ -1,4 +1,5 @@
-# Local Restaurant Recommender 
+# Easy Eats
+#### Local Restaurant Recommender 
 We created Easy Eats in order to help food lovers and community members not have to struggle to find and support small, locally-owned restaurants. Our web app connects people with hidden gems in their area, empowering communities to uplift independent businesses with every meal.
 
 # Set Up 
