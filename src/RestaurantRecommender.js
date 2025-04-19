@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
 
 const RestaurantRecommender = () => {
     const [location, setLocation] = useState('');
     const [cuisine, setCuisine] = useState('');
     const navigate = useNavigate();
+
+    const [searchParams] = useSearchParams();
+    const username = searchParams.get('user');
 
     // https://medium.com/@bobjunior542/using-usenavigate-in-react-router-6-a-complete-guide-46f51403f430
     const handleSubmit = (event) => {
@@ -20,6 +24,7 @@ const RestaurantRecommender = () => {
     return (
         <div className="container">
             <h1>Welcome to our Restaurant Recommender</h1>
+            {username && <p>Welcome, {username}!</p>}
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
                     <label htmlFor="location">Around what zipcode do you want to find restaurants?</label>
